@@ -5,7 +5,8 @@ module load ffmpeg
 module load cuda/12.1
 
 # 2. Activate Python Environment
-source /home/jcdutoit/CS601/vla-interp/.venv/bin/activate
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+source "$SCRIPT_DIR/.venv/bin/activate"
 
 # 3. Fix the "Rats" (BYU-Specific Pathing)
 export FFMPEG_LIB=/apps/spack/root/opt/spack/linux-rhel9-haswell/gcc-13.2.0/ffmpeg-7.0.1-pzg5pllmqfjzz2ubrlm3jcxyyh7gtpyr/lib

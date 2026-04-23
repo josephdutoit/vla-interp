@@ -1,0 +1,15 @@
+wandb/
+logs/
+eval_logs/
+runs/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
